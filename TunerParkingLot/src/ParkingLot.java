@@ -32,7 +32,8 @@ public class ParkingLot {
         for (ParkingSpot spot : spots) {
             if (spot.isOccupied()) {
                 Car car = spot.getParkedCar();
-                String carDetails = new StringBuilder().append(car.getColor()).append(" ")
+                String carDetails = new StringBuilder().append("Spot " + i)
+                .append(car.getColor()).append(" ")
                 .append(car.getYear()).append(" ")
                 .append(car.getMake()).append(" ")
                 .append(car.getModel()).append(" ")
